@@ -23,6 +23,7 @@ const Navbar = () => {
         </Button> */}
       </div>
       <Menu theme="dark">
+        {/* can refactor to newer style when completed */}
         <Menu.Item icon={<HomeOutlined />}>
           <Link to="/">Home</Link>
         </Menu.Item>
