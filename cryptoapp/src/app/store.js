@@ -7,5 +7,7 @@ export default configureStore({
     [cryptoApi.reducerPath]: cryptoApi.reducer,
     // needs to be specified for every reducer thats created
   },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(cryptoApi.middleware),
 });
 // passed store variable through provider in index.js
