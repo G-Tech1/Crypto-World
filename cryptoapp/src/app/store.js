@@ -8,6 +8,6 @@ export default configureStore({
     // needs to be specified for every reducer thats created
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(cryptoApi.middleware),
+    getDefaultMiddleware().concat(cryptoApi.middleware), //just add reducer being used
 });
 // passed store variable through provider in index.js
