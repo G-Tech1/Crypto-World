@@ -35,7 +35,7 @@ const Cryptocurrencies = ({ simplified }) => {
         {/* creates a grid of all the cryptocurrencies, gutter creates space on the sides */}
         {cryptos?.map((currency) => (
           <Col xs={24} s={12} lg={6} className="crypto-card" key={currency.id}>
-            <Link to={`/crypto/${currency.id}`}>
+            <Link to={`/crypto/${currency.uuid}`}>
               <Card
                 title={`${currency.rank}. ${currency.name}`}
                 extra={<img className="crypto-image" src={currency.iconUrl} />}
