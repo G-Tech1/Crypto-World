@@ -34,8 +34,27 @@ export const { useGetCryptoNewsQuery } = cryptoNewsApi;
 //         'X-RapidAPI-Key',
 //         'd831108a87msh86b03aaeca72904p18b887jsn68d40f28d29a'
 //       );
-//       headers.append('X-BingApis-SDK', 'true');
+//       headers.set('x-bingapis-sdk', 'true');
 //       return headers;
+//     },
+//   }),
+//   endpoints: (builder) => ({
+//     getCryptoNews: builder.query({
+//       query: (newsCategory, count) =>
+//         `news/search?q=${newsCategory}&safeSearch=Off&textFormat=Raw&freshness=Day&count=${count}`,
+//     }),
+//   }),
+// });
+
+// export const { useGetCryptoNewsQuery } = cryptoNewsApi;
+
+// export const cryptoNewsApi = createApi({
+//   reducerPath: 'cryptoNewsApi',
+//   baseQuery: fetchBaseQuery({
+//     baseUrl: 'bing-news-search1.p.rapidapi.com',
+//     prepareHeaders: {
+//       'X-RapidAPI-Key': 'd831108a87msh86b03aaeca72904p18b887jsn68d40f28d29a',
+//       'x-bingapis-sdk': 'true',
 //     },
 //   }),
 //   endpoints: (builder) => ({

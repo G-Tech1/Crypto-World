@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const cryptoApi = createApi({
   reducerPath: 'cryptoApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://coinranking1.p.rapidapi.com/',
+    baseUrl: 'https://coinranking1.p.rapidapi.com',
     prepareHeaders: (headers) => {
       headers.set(
         'X-RapidAPI-Key',
@@ -31,3 +31,6 @@ export const {
   useGetCryptoDetailsQuery,
   useGetCryptoHistoryQuery,
 } = cryptoApi;
+
+// 'X-RapidAPI-Key',
+// 'd831108a87msh86b03aaeca72904p18b887jsn68d40f28d29a'

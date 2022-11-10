@@ -109,7 +109,7 @@ const CryptoDetails = () => {
           market cap and supply
         </p>
       </Col>
-      <Select
+      {/* <Select
         defaultValue="24h"
         className="select-timeperiod"
         placeholder="Select Time Period"
@@ -118,7 +118,7 @@ const CryptoDetails = () => {
         {time.map((date) => (
           <Option key={date}>{date}</Option>
         ))}
-      </Select>
+      </Select> */}
       <LineChart
         coinHistory={coinHistory}
         currentPrice={millify(cryptoDetails.price)}
